@@ -49,4 +49,7 @@ body {
 .class-card:hover {
     background-color: var(--bs-primary);
     color: white;
+}.color {
+    font-family: 'Times New Roman', Times, serif;
+        color: #ff0000; /* This sets the color to bright red */
 }

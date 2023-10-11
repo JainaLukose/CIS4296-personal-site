@@ -25,25 +25,13 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>
+    
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>Jaina's Homepage</title>
   </head>
 
   <body>
@@ -68,8 +56,8 @@
               <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#projects"
-                >Projects</a
+              <a class="nav-link" aria-current="page" href="#hobbies"
+                >Hobbies</a
               >
             </li>
             <li class="nav-item">
@@ -80,6 +68,11 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#contact"
                 >Contact</a
+              >
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#work"
+                >Work</a
               >
             </li>
           </ul>
@@ -105,13 +98,11 @@
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
           Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          Jaina Lukose!
         </h4>
       </div>
       <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-center text-opacity-75 text-primary">
-          Information Science & Technology Student at Temple University
-        </h5>
+        <h5 class="h5 mx-auto text-center text-opacity-75 text-primary"><strong> Information Science &amp; Technology Student at Temple University </strong></h5>
       </div>
       <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
         <div class="col text-center">
@@ -204,55 +195,32 @@
       id="projects"
     >
       <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">Projects</h4>
+        <h4 class="h1 font-weight-bold mx-auto text-center">All About Me</h4>
       </div>
       <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
-          I've worked on some neat things.
+        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4 color">
+          Here are some facts about me. 
         </h5>
       </div>
       <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
+        <h5>Career</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
+          From my career I hope to be in product management or in a digital space where I can work with a company's mobile app and 
+            assit on developing certain features. For my last internship i was a product management intern for the digital channels team for 
+            TD bank. There I worked with their mobile app and assisted in developing their virtual assistant.
         </p>
       </div>
       <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
+        <h5>My Hobbies</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
-          ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
-          Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
-          imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
-          dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
-          varius urna dictum porta.
+          Outside of my career I truly enjoy trying new things. In the past, I made a blanket ladder with the scrap wood i found from my dads only projects. I've also learned to love cooking and is something I do on a daily basis. I grew up loving to cook because I would always try new receipes with my uncle. 
         </p>
       </div>
-      <div class="row w-100">
-        <h5>Query Dating Site</h5>
-      </div>
-      <div class="row w-100">
-        <p class="text-justify">
-          Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
-          odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
-          nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
-          gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
-          sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
-          maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
-          porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-          efficitur at.
-        </p>
-      </div>
+   
       <div class="row mt-3 next">
         <a href="#courses" class="col"
           ><iconify-icon
@@ -333,6 +301,52 @@
         </div>
       </div>
     </div>
+      <div
+      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+      id="work"
+    >
+      <div class="row mx-auto">
+        <h4 class="h1 font-weight-bold mx-auto text-center">My work experience</h4>
+      </div>
+      <div class="row mx-auto">
+        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
+          Here are some of my work experience  
+        </h5>
+      </div>
+      <div class="row w-100">
+        <h5>TD Bank</h5>
+      </div>
+      <div class="row w-100 mb-4">
+        <p class="text-justify">
+          Designed a visionary deck proposing an authenticated chat experience in the TD mobile app that is projected to yield savings of up to $46 million and increase customer engagement by 60%. I also conducted a comprehensive competitive analysis of 3 key competitors to identify gaps in the market, uncover opportunities for innovation, and inform strategic decision-making. Lastly I facilitated in the migration of 100+ intents within our virtual assistant, concurrently redesigning conversation flows and identifying opportunities to enhance the customer journey
+        </p>
+      </div>
+      <div class="row w-100">
+        <h5>Material</h5>
+      </div>
+      <div class="row w-100 mb-4">
+        <p class="text-justify">
+          Leveraged past sales data to execute pricing strategies to improve profit margin and point of sales rates, while gaining insight into the product performance and branding enhancement. I also collaborated with internal resource teams in the data collection, programming, analysis, and reporting phases of research engagements to meet client deadlines and ensure successful completion of 15+ projects. Lastly I utilized 3 research methodologies to provide consumer insights that successfully drove marketing strategies and led to a 19%increase in consumer awareness
+        </p>
+      </div>
+      <div class="row w-100">
+        <h5>Temple Univeristy </h5>
+      </div>
+      <div class="row w-100">
+        <p class="text-justify">
+          Resolved complex and technical issues to over 200+ Temple staff utilizing nontechnical language to ensure clear understanding. I also improved productivity of classroom settings across 5+ Temple buildings through weekly assistance of MS Office issues. Lastly I have analyzed technological issues for the Computer Science Administration Department impacting PCs, touch panels, and projectors
+        </p>
+      </div>
+      <div class="row mt-3 next">
+        <a href="#courses" class="col"
+          ><iconify-icon
+            icon="material-symbols:arrow-circle-down"
+            class="arrow-next"
+          ></iconify-icon
+        ></a>
+      </div>
+    </div>
+      
     <div
       class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
       id="contact"
@@ -348,7 +362,7 @@
         </h5>
       </div>
       <div class="row my-4 contact-wrapper gap-3">
-        <a href="mailto:johndoe@gmail.com" class="col text-black">
+        <a href="mailto:tun07130@temple.edu" class="col text-black">
           <iconify-icon
             icon="logos:google-gmail"
             width="60"
@@ -358,7 +372,7 @@
             title="Email"
           ></iconify-icon>
         </a>
-        <a href="https://www.linkedin.com/in/johndoe/" class="col"
+        <a href="https://www.linkedin.com/in/jaina-lukose-9811811b8/" class="col"
           ><iconify-icon
             icon="skill-icons:linkedin"
             width="60"
@@ -368,7 +382,7 @@
             title="LinkedIn"
           ></iconify-icon>
         </a>
-        <a href="https://github.com/johndoe" class="col"
+        <a href="https://github.com/JainaLukose/" class="col"
           ><iconify-icon
             icon="skill-icons:github-dark"
             width="60"
@@ -392,6 +406,14 @@
         </div>
       </div>
     </div>
+      
+       <style>
+    .color {
+        font-family: 'Times New Roman', Times, serif;
+        color: #3D3977; /* This sets the color to bright red */
+    }
+</style>
+      
 
     <script>
       const tooltipTriggerList = document.querySelectorAll(
